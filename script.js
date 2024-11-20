@@ -56,20 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 gridcolor: '#333'
             },
             yaxis: {
-                title: {
-                    text: 'ECG Value',
-                    font: {
-                        color: 'white'
-                    }
-                },
-                tickcolor: 'white',
-                tickfont: {
-                    color: 'white'
-                },
-                gridcolor: '#333',
-                nticks: 10
+                showticklabels: false, // Hide Y-axis tick labels
+                gridcolor: '#333', // Optional: you can remove grid lines if not needed
+                zeroline: false // Optional: hide the zero line
             }
         };
+        
 
         // Render or update the graph
         Plotly.react('plot', [{
@@ -82,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 width: 2
             }
         }], layout);
+        
     }
 
     // Periodically fetch new data every second
