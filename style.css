@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Set background color */
+    color: white; /* Set text color */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+#plot {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Center the plot */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0; /* Add some margin */
+}
+
+button {
+    margin: 10px; /* Space between buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    font-size: 16px; /* Font size for buttons */
+    color: white; /* Text color for buttons */
+    background-color: #007BFF; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
